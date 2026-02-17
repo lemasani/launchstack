@@ -3,12 +3,24 @@
   "version": "0.0.1",
   "description": "Scaffold a React + Vite + TypeScript starter with optional libraries",
   "type": "module",
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/create-react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/create-react-starter/issues"
+  },
+  "homepage": "https://github.com/yourusername/create-react-starter#readme",
   "bin": {
     "create-react-starter": "./dist/index.js"
   },
   "files": [
     "dist",
-    "template"
+    "template",
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm --clean",
@@ -16,7 +28,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [
     "react",
@@ -25,7 +38,12 @@
     "starter",
     "template",
     "cli",
-    "scaffold"
+    "scaffold",
+    "react-router",
+    "tanstack",
+    "tailwind",
+    "shadcn-ui",
+    "create-app"
   ],
   "engines": {
     "node": ">=18.0.0"
