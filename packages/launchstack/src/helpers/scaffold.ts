@@ -151,7 +151,7 @@ async function replacePlaceholders(
   projectPath: string,
   preferences: UserPreferences
 ): Promise<void> {
-  const filesToUpdate = ['package.json', 'README.md'];
+  const filesToUpdate = ['package.json', 'README.md', 'index.html'];
   
   for (const fileName of filesToUpdate) {
     const filePath = path.join(projectPath, fileName);
