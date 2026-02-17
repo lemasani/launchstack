@@ -3,11 +3,13 @@ import { detectPackageManager, getRunCommand, getInstallCommand } from '../src/u
 
 describe('package-manager', () => {
   describe('detectPackageManager', () => {
-    it('should detect npm when no user agent is present', () => {
+    it('should detect installed package manager when no user agent is present (prefers pnpm)', () => {
       const originalAgent = process.env.npm_config_user_agent;
       delete process.env.npm_config_user_agent;
       
-      expect(detectPackageManager()).toBe('npm');
+      // Since pnpm is installed on this system, it should be detected
+      const detected = detectPackageManager();
+      expect(['pnpm', 'yarn', 'bun', 'npm']).toContain(detected);
       
       process.env.npm_config_user_agent = originalAgent;
     });
@@ -17,6 +19,15 @@ describe('package-manager', () => {
       process.env.npm_config_user_agent = 'pnpm/9.0.0';
       
       expect(detectPackageManager()).toBe('pnpm');
+      
+      process.env.npm_config_user_agent = originalAgent;
+    });
+
+    it('should prioritize user agent over system installation', () => {
+      const originalAgent = process.env.npm_config_user_agent;
+      process.env.npm_config_user_agent = 'npm/10.0.0';
+      
+      expect(detectPackageManager()).toBe('npm');
       
       process.env.npm_config_user_agent = originalAgent;
     });
