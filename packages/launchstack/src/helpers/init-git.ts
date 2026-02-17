@@ -34,7 +34,7 @@ export async function initializeGit(projectPath: string): Promise<void> {
     // Create initial commit
     await execa(
       'git',
-      ['commit', '-m', 'Initial commit from create-react-starter'],
+      ['commit', '-m', 'Initial commit from LaunchStack'],
       { cwd: projectPath }
     );
 

@@ -1,32 +1,32 @@
-# create-react-starter
+# LaunchStack
 
-A modern CLI tool for scaffolding React + Vite + TypeScript projects with your choice of popular libraries and frameworks.
+Launch production-ready React apps in seconds with your choice of routing, state management, and authentication.
 
 ## Features
 
-- 🚀 **Fast scaffolding** - Get up and running in seconds
-- 🎨 **Pre-configured** - React 19, Vite, TypeScript, Tailwind CSS, and shadcn/ui
+- 🚀 **Lightning fast** - Get up and running in seconds
+- 🎨 **Production-ready** - React 19, Vite, TypeScript, Tailwind CSS v4, and shadcn/ui
 - 🔀 **Flexible routing** - Choose between React Router, TanStack Router, or none
-- 📦 **Optional integrations** - TanStack Query, Better Auth, Axios
-- 📝 **Form libraries** - React Hook Form or TanStack Form with Zod validation
-- 🎯 **Type-safe** - Full TypeScript support throughout
+- 📦 **Modern stack** - TanStack Query, Better Auth, Axios
+- 📝 **Type-safe forms** - React Hook Form or TanStack Form with Zod validation
+- 🎯 **Fully typed** - Complete TypeScript support throughout
 - 🌈 **Beautiful UI** - 13 pre-configured shadcn/ui components
-- 🔧 **Developer tools** - ESLint, git initialization, and more
+- 🔧 **Developer experience** - ESLint, git initialization, and more
 
 ## Quick Start
 
 ```bash
 # Using npm
-npx create-react-starter my-app
+npx launchstack my-app
 
 # Using pnpm
-pnpm create react-starter my-app
+pnpm dlx launchstack my-app
 
 # Using yarn
-yarn create react-starter my-app
+yarn dlx launchstack my-app
 
 # Using bun
-bunx create-react-starter my-app
+bunx launchstack my-app
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ bunx create-react-starter my-app
 Simply run the command and follow the prompts:
 
 ```bash
-npx create-react-starter my-app
+npx launchstack my-app
 ```
 
 You'll be asked to choose:
@@ -51,7 +51,7 @@ You'll be asked to choose:
 Skip the interactive prompts by using command-line flags:
 
 ```bash
-npx create-react-starter my-app \
+npx launchstack my-app \
   --router react-router \
   --query \
   --auth \
@@ -167,13 +167,13 @@ my-app/
 ### Create a project with React Router and TanStack Query
 
 ```bash
-npx create-react-starter my-app --router react-router --query
+npx launchstack my-app --router react-router --query
 ```
 
 ### Create a full-stack app with authentication
 
 ```bash
-npx create-react-starter my-app \
+npx launchstack my-app \
   --router tanstack-router \
   --query \
   --auth \
@@ -184,7 +184,7 @@ npx create-react-starter my-app \
 ### Create a simple SPA without routing
 
 ```bash
-npx create-react-starter my-app --router none
+npx launchstack my-app --router none
 ```
 
 ## Development
@@ -246,8 +246,8 @@ npm pack
 
 # Test the tarball in a temporary directory
 cd /tmp
-npm install -g /path/to/create-react-starter-0.0.1.tgz
-create-react-starter test-app
+npm install -g /path/to/launchstack-0.0.1.tgz
+launchstack test-app
 ```
 
 ### Publishing to npm
@@ -275,7 +275,7 @@ create-react-starter test-app
 
 5. **Verify**:
    ```bash
-   npx create-react-starter@latest verify-project
+   npx launchstack@latest verify-project
    ```
 
 Note: The `prepublishOnly` script will automatically run `pnpm build && pnpm test` before publishing.
@@ -290,4 +290,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/lemasani/react-starter-template).
+If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/lemasani/launchstack).

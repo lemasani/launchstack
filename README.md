@@ -1,18 +1,18 @@
-# create-react-starter
+# LaunchStack
 
-A modern CLI tool for scaffolding React + Vite + TypeScript projects with your choice of popular libraries and frameworks.
+Launch production-ready React apps in seconds with your choice of routing, state management, and authentication.
 
 ## Project Structure
 
 This is a monorepo containing:
 
-- **`packages/create-react-starter/`** - The CLI tool for scaffolding React projects
-  - See [CLI README](./packages/create-react-starter/README.md) for detailed documentation
+- **`packages/launchstack/`** - The CLI tool for scaffolding React projects
+  - See [CLI README](./packages/launchstack/README.md) for detailed documentation
 
 ## Quick Start
 
 ```bash
-npx create-react-starter my-app
+npx launchstack my-app
 ```
 
 ## Development
@@ -37,19 +37,19 @@ pnpm test
 pnpm build
 
 # Link globally for testing
-cd packages/create-react-starter
+cd packages/launchstack
 pnpm link --global
 
 # Use it anywhere
-create-react-starter test-project
+launchstack test-project
 
 # Unlink when done
-pnpm uninstall --global create-react-starter
+pnpm uninstall --global launchstack
 ```
 
 ## Documentation
 
-See the [CLI package README](./packages/create-react-starter/README.md) for complete documentation.
+See the [CLI package README](./packages/launchstack/README.md) for complete documentation.
 
 ## License
 

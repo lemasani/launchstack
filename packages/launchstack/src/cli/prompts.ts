@@ -8,7 +8,7 @@ import { validateProjectName, directoryExists, isDirectoryEmpty, getProjectPath 
  */
 export async function runPrompts(initialProjectName?: string): Promise<UserPreferences> {
   console.log('');
-  clack.intro(pc.bgCyan(pc.black(' create-react-starter ')));
+  clack.intro(pc.bgCyan(pc.black(' 🚀 LaunchStack ')));
 
   // Project name prompt
   const projectName = await clack.text({

@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial release of create-react-starter
+- Initial release of LaunchStack
 - Interactive CLI with beautiful prompts
 - Non-interactive mode with CLI flags
 - Base template with React 19, Vite, TypeScript, Tailwind CSS v4
@@ -67,4 +67,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Clean project structure
 - Production-ready configuration
 
-[0.0.1]: https://github.com/lemasani/react-starter-template/releases/tag/v0.0.1
+[0.0.1]: https://github.com/lemasani/launchstack/releases/tag/v0.0.1

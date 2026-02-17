@@ -19,8 +19,8 @@ export function parseArguments(): { projectName?: string; flags: CLIFlags } {
   const program = new Command();
 
   program
-    .name('create-react-starter')
-    .description('Create a new React + Vite + TypeScript project with configurable features')
+    .name('launchstack')
+    .description('Launch production-ready React apps in seconds')
     .version('0.0.1')
     .argument('[project-name]', 'Name of the project')
     .option('--router <type>', 'Router to use: react-router, tanstack-router, or none')

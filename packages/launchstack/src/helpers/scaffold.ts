@@ -15,8 +15,8 @@ const __dirname = path.dirname(__filename);
 export function getTemplatePath(): string {
   // __dirname will be dist/ after build
   // So we need to go up one level and find template/
-  // In development: packages/create-react-starter/template
-  // In production (installed): node_modules/create-react-starter/template
+  // In development: packages/launchstack/template
+  // In production (installed): node_modules/launchstack/template
   
   // From dist/index.js, go up one level to package root
   return path.resolve(__dirname, '../template');
@@ -80,7 +80,7 @@ export async function scaffoldProject(
       } else if (error.message.includes('Template not found')) {
         throw new Error(
           'Template files are missing. This might be a corrupted installation. ' +
-          'Try reinstalling create-react-starter.'
+          'Try reinstalling launchstack.'
         );
       }
     }

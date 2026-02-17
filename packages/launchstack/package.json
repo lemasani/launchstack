@@ -1,21 +1,21 @@
 {
-  "name": "create-react-starter",
+  "name": "launchstack",
   "version": "0.0.1",
-  "description": "Scaffold a React + Vite + TypeScript starter with optional libraries",
+  "description": "Launch production-ready React apps in seconds with your choice of routing, state management, and authentication",
   "type": "module",
   "author": "lemasani",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lemasani/react-starter-template.git",
-    "directory": "packages/create-react-starter"
+    "url": "https://github.com/lemasani/launchstack.git",
+    "directory": "packages/launchstack"
   },
   "bugs": {
-    "url": "https://github.com/lemasani/react-starter-template/issues"
+    "url": "https://github.com/lemasani/launchstack/issues"
   },
-  "homepage": "https://github.com/lemasani/react-starter-template/tree/main/packages/create-react-starter#readme",
+  "homepage": "https://github.com/lemasani/launchstack#readme",
   "bin": {
-    "create-react-starter": "./dist/index.js"
+    "launchstack": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -34,6 +34,7 @@
     "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [
+    "launchstack",
     "react",
     "vite",
     "typescript",
@@ -45,7 +46,8 @@
     "tanstack",
     "tailwind",
     "shadcn-ui",
-    "create-app"
+    "create-app",
+    "boilerplate"
   ],
   "engines": {
     "node": ">=18.0.0"

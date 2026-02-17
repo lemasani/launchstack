@@ -1,11 +1,11 @@
 {
-  "name": "react-starter-template",
+  "name": "launchstack-monorepo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "pnpm --filter create-react-starter dev",
-    "build": "pnpm --filter create-react-starter build",
+    "dev": "pnpm --filter launchstack dev",
+    "build": "pnpm --filter launchstack build",
     "build:template": "cd packages/template && tsc -b && vite build",
     "typecheck": "pnpm -r run typecheck"
   },
