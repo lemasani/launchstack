@@ -16,9 +16,9 @@ export const tanstackFormInstaller: Installer = {
     // Add dependencies
     await addDependencies(projectPath, {
       dependencies: {
-        '@tanstack/react-form': '^0.39.2',
-        '@tanstack/zod-form-adapter': '^0.39.2',
-        'zod': '^3.24.1',
+        '@tanstack/react-form': '^0.42.1',
+        '@tanstack/zod-form-adapter': '^0.42.1',
+        zod: '^3.24.1',
       },
     });
 
