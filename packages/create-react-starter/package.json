@@ -3,16 +3,17 @@
   "version": "0.0.1",
   "description": "Scaffold a React + Vite + TypeScript starter with optional libraries",
   "type": "module",
-  "author": "Your Name",
+  "author": "lemasani",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/create-react-starter.git"
+    "url": "https://github.com/lemasani/react-starter-template.git",
+    "directory": "packages/create-react-starter"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/create-react-starter/issues"
+    "url": "https://github.com/lemasani/react-starter-template/issues"
   },
-  "homepage": "https://github.com/yourusername/create-react-starter#readme",
+  "homepage": "https://github.com/lemasani/react-starter-template/tree/main/packages/create-react-starter#readme",
   "bin": {
     "create-react-starter": "./dist/index.js"
   },
@@ -20,7 +21,8 @@
     "dist",
     "template",
     "README.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm --clean",

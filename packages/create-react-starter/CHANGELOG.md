@@ -67,4 +67,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Clean project structure
 - Production-ready configuration
 
-[0.0.1]: https://github.com/yourusername/create-react-starter/releases/tag/v0.0.1
+[0.0.1]: https://github.com/lemasani/react-starter-template/releases/tag/v0.0.1

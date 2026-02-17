@@ -231,6 +231,55 @@ npm run preview
 
 If you select Better Auth without a router, authentication configuration files will be created, but no login page will be generated. You'll need to create your own authentication UI.
 
+## Publishing (for maintainers)
+
+### Local Testing
+
+Test the package locally before publishing:
+
+```bash
+# Build the package
+pnpm build
+
+# Create a tarball
+npm pack
+
+# Test the tarball in a temporary directory
+cd /tmp
+npm install -g /path/to/create-react-starter-0.0.1.tgz
+create-react-starter test-app
+```
+
+### Publishing to npm
+
+1. **Build and test**:
+   ```bash
+   pnpm build
+   pnpm test
+   ```
+
+2. **Update version** (if needed):
+   ```bash
+   npm version patch  # or minor, or major
+   ```
+
+3. **Login to npm** (first time only):
+   ```bash
+   npm login
+   ```
+
+4. **Publish**:
+   ```bash
+   npm publish
+   ```
+
+5. **Verify**:
+   ```bash
+   npx create-react-starter@latest verify-project
+   ```
+
+Note: The `prepublishOnly` script will automatically run `pnpm build && pnpm test` before publishing.
+
 ## License
 
 MIT
@@ -241,4 +290,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/yourusername/create-react-starter).
+If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/lemasani/react-starter-template).
